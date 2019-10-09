@@ -8,8 +8,11 @@ if (process.env.NODE_ENV === "production") {
 } else {
   mongoURI = "mongodb://localhost/recipes";
 }
-mongoose.connect('mongodb://localhost/recipes',{ useNewUrlParser: true,useUnifiedTopology: true,
-useFindAndModify: false}, () => {
-    console.log("We connected!!!")
-  })
+mongoose
+  .connect(mongoURI, { useNewUrlParser: true })
+  .then(instance =>
+    console.log(`Connected to db: ${instance.connections[0].name}`)
+  )
+  .catch(error => console.log("Connection failed!", error));
+
   module.exports = mongoose
