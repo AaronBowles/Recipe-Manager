@@ -4,9 +4,9 @@ let mongoURI = "";
 if (process.env.NODE_ENV === "production") {
   mongoURI = process.env.DB_URL;
 } else {
-  mongoURI = "mongodb://localhost/recipes";
+  mongoURI = "mongodb://localhost/recipe";
 }
-mongoose.connect('mongodb://localhost/recipes',{ useNewUrlParser: true,useUnifiedTopology: true,
+mongoose.connect('mongodb://localhost/recipe',{ useNewUrlParser: true,useUnifiedTopology: true,
 useFindAndModify: false}, () => {
     console.log("We connected!!!")
   })
