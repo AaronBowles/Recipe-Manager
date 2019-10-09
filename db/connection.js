@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/recipes',{ useUnifiedTopology: true });
+mongoose.connect(mongoURI,{ useNewUrlParser: true}, () => {
+    console.log("We connected!!!")
+  })
 
 mongoose.Promise = Promise;
 
