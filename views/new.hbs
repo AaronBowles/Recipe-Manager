@@ -1,0 +1,45 @@
+<header>
+<h1>Recipe Manager</h1>
+</header>
+
+<h2>New Recipe:</h2> 
+
+<form action= "/" method="POST">
+<h3> Recipe Name</h3>
+    <p>
+        <label for="">Name </label> 
+        <input type="text" name="title"/>
+    </p>
+<h3> Ingredients </h3>
+<div>
+<p> Inlcude one ingredient and it's quantity per input line</p>
+    <ul class= "ingredientList">
+        
+        <li>
+        <label class= "ingredientLabel" for=""></label>
+        <input class= "ingredientInput" type="text" name="ingredients"/>
+        </li>
+
+    </ul>
+  
+</div>    
+    <button class = "addIngredient"> Additional Ingredient</button>
+    <button class = "removeIngredient"> Remove Bottom Ingredient</button>
+
+   
+ 
+<h3> Instructions</h3> 
+<div>
+
+<p> Inlcude each step on its own input line</p>
+    <ol class = "stepList">
+        <li>
+        <input type="text" name="steps"/>
+        </li>
+    </ol>
+</div>
+    <button class = "addStep">Additional Step</button>
+    <button class = "removeStep"> Remove Bottom Step</button>
+<input type="submit" value="Create"/>
+</form>
+ 

@@ -1,0 +1,21 @@
+[
+    {
+        "title": "Pizza",
+        "ingredients": [
+            "dough - 1 cup",
+            "pepperonis - 1 cup",
+            "chesse - 3 cups"
+        ],
+        "steps": ["Spread out dough", "cover dough in tomato sauce", "Add cheese on top","finally add pepperonis"]
+    },
+    {
+        "title": "Tacos",
+        "ingredients": [
+            "tortilla - 1 cup",
+            "meat - 1 cup",
+            "cheese - 1 cup",
+            "lettuce - to liking"
+        ],
+        "steps": ["heat tortilla for 15 seconds in microwave", "add meat","add cheese","add lettuce"]
+    }
+]

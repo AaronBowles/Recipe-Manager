@@ -1,0 +1,22 @@
+<header>
+<h1>Recipe Manager</h1>
+</header>
+
+<h2>Meals</h2>
+<div class = "meals">
+<ul class = "recipeList">
+    {{#each recipes}}
+    <li>
+        <a href="/{{this.id}}">{{this.title}}</a>
+    </li>
+    {{/each}}
+</ul>
+
+</div>
+<h3>Add a new meal!</h3>
+
+<a class=" addNew" href="/new">Add Now!</a>
+
+
+
+

@@ -1,0 +1,56 @@
+<header>
+<h1> Recipe Manager </h1>
+</header>
+
+
+<h2> Edit {{recipe.title}} </h2>
+
+<h3> Ingredients</h3>
+    
+ <form action="/{{recipe.id}}?_method=put" method="post">
+ 
+ <div>
+
+    <ul class = "ingredientList">
+    {{#each recipe.ingredients }}
+       
+   <li>
+       <label>{{this}}</label>
+        <input type="text" value= "{{this}}" name="ingredients" />
+       
+   </li>
+
+      
+    {{/each}}
+</ul>
+ </div>
+
+<button class = "addIngredient"> Additional Ingredient</button>
+    <button class = "removeIngredient"> Remove Bottom Ingredient</button>
+  <input class= "update" type="submit" value="Update" />
+ </form>
+
+ <h3> Instructions </h3> 
+
+<form action="/{{recipe.id}}?_method=put" method="post">
+
+<div>
+<ol class = "stepList">
+    {{#each recipe.steps}}
+       
+   <li>
+       <label>{{this}}</label>
+        <input type="text" value= "{{this}}" name="steps" />
+       
+   </li>
+
+    {{/each}}
+</ol>
+</div>
+
+<button class = "addStep">Additional Step</button>
+<button class = "removeStep"> Remove Bottom Step</button>
+    
+  <input class="update" type="submit" value="Update" />
+ </form>
+
