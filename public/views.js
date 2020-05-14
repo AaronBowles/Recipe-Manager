@@ -19,6 +19,7 @@ removeIngredient.addEventListener('click', (event)=> {
 addIngredient.addEventListener('click', (event) => {
     event.preventDefault()
 
+    // These lines of code should be indented
 const ingredientLi = document.createElement('li');
 const ingredientLabel = document.createElement('label');
 ingredientLabel.setAttribute('for', "");
@@ -46,9 +47,11 @@ removeStep.addEventListener('click', (event) => {
 addStep.addEventListener('click', (event) => {
     event.preventDefault();
 
+    // These lines of code should be indented
 const stepLi = document.createElement('li');
 stepLi.setAttribute('class', 'stepList')
 const stepLabel = document.createElement('label');
+// Add a real for attribute for accessibility!
 stepLabel.setAttribute('for', "");
 const stepInput = document.createElement('input');
 stepInput.setAttribute('type', 'text');
